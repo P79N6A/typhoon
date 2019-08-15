@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ffe579ef-910b-43bd-9b64-e4dffe319307" name="205_fk" url="http://10.12.66.205">
+        <fileTransfer host="10.12.66.205" port="22" rootFolder="/mnt/cephfs/lab/wangxiyu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

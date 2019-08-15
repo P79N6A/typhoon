@@ -1,0 +1,22 @@
+# The guess API is already defined for you.
+# @param num, your guess
+# @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
+# def guess(num):
+
+class Solution(object):
+    def guessNumber(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        low = 1
+        high = n
+        while(1):
+            tmp = ( low + high )//2
+            flag = guess(tmp)
+            if flag == 1:
+                low = tmp + 1
+            elif flag == -1:
+                high = tmp - 1
+            else:
+                return tmp

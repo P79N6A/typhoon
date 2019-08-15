@@ -1,0 +1,21 @@
+def def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+		data = 0
+		switch = {"I":1,
+				  "V":5,
+				  "X":10,
+				  "L":50,
+				  "C":100,
+				  "D":500,
+				  "M":1000}
+		for i in range(len(s)):
+			if i != len(s)-1 and switch[s[i]]<switch[s[i+1]]:
+				data -= switch[s[i]]
+			else:data += switch[s[i]]
+		return data
+			
+			
+			
